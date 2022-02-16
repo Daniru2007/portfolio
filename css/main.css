@@ -2,7 +2,10 @@
     background-color: #07273B;
     color: #79AFCA;
     overflow-y:initial; /* Hide vertical scrollbar */
+}
 
+body{
+    background-color: #07273B;
 }
 
 *::selection{
