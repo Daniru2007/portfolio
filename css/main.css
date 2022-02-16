@@ -14,6 +14,7 @@ body{
 
 .heading{
     color: #79AFCA;
+    text-shadow: 0px 50px 50px rgba(0, 227, 243, 0.377);
     margin:8vw;
 }
 
@@ -28,26 +29,30 @@ body{
 
 
 .tools, .languages{
-    box-shadow: 20px 20px 30px black;
-    grid-template-columns: auto auto auto;
+    box-shadow: 0px 0px 30px black;
+    grid-template-columns: auto auto;
     padding: 15px;
     margin-top: 50px;
-    margin-left: 1vw;
-    margin-right:0px;
     width: 50%;
     display: block;
     border: #79AFCA solid 2px;
     border-radius: 1.5vw;
     text-align: center;
     background-color: #09334E;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 20vw;
 }
+
+.tools{
+    margin-right: 3vw;
+    margin-left: 20vw;
+}
+
 
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    /* padding: 10vw; */
-    padding-left: 10vw;
-    padding-right: 5vw;
 }
 
 .bg{
@@ -56,4 +61,13 @@ body{
 
 .tools>ul,.languages>ul{
     text-align: left;
+}
+
+.tools:hover, .languages:hover{
+    box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
+}
+
+.heading:hover{
+    color: #00aaff;
+    text-shadow: 0px 50px 50px rgb(0, 227, 243);
 }
