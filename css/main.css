@@ -43,6 +43,14 @@ body{
     margin-left: 5vw;
     margin-right: 5vw;
     width: 20vw;
+    animation-name: glow-off;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes glow-off{
+    from{box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);}
+    to{box-shadow: 0px 0px 30px black;}
 }
 
 .tools{
@@ -65,5 +73,14 @@ body{
 }
 
 .tools:hover, .languages:hover{
+    /* box-shadow: 0px 0px 30px black; */
+    animation-name: glow;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
     box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
+}
+
+@keyframes glow{
+    from{box-shadow: 0px 0px 30px black;}
+    to{box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);}
 }
