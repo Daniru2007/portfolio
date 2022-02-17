@@ -1,7 +1,6 @@
 *{
     background-color: #07273B;
     color: #79AFCA;
-    overflow-y:initial; /* Hide vertical scrollbar */
 }
 
 body{
@@ -15,7 +14,7 @@ body{
 .heading{
     text-align: center;
     color: #79AFCA;
-    text-shadow: 0px 50px 50px rgba(0, 227, 243, 0.377);
+    text-shadow: 0px 50px 50px rgb(0, 227, 243);
     margin:8vw;
 }
 
@@ -67,9 +66,4 @@ body{
 
 .tools:hover, .languages:hover{
     box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
-}
-
-.heading:hover{
-    color: #00aaff;
-    text-shadow: 0px 50px 50px rgb(0, 227, 243);
 }
