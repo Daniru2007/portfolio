@@ -85,3 +85,38 @@ body{
     from{box-shadow: 0px 0px 30px black;}
     to{box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);}
 }
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.profile-pic{
+    box-shadow: 0px 0px 30px black;
+    left: 100px;
+    top: 50px;
+    position: absolute;
+    transform: rotate(0deg);
+    width: 175px;
+    border-radius: 100%;
+    animation-name: rot, glow-off;
+    animation-iteration-count: 1, 1;
+    animation-duration: 500ms, 1000ms;
+}
+
+@keyframes rot {
+    from{transform: rotate(360);}
+    to{transform: rotate(0deg);}
+}
+
+.profile-pic:hover{
+    box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
+    animation-name: glow, rot-back;
+    animation-iteration-count: 1, infinite;
+    animation-duration: 1000ms, 500ms;
+}
+@keyframes rot-back {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
