@@ -36,18 +36,23 @@ body{
     grid-template-columns: auto auto;
     padding: 15px;
     margin-top: 50px;
-    width: 50%;
+    width: 100%;
     display: block;
     border: #79AFCA solid 2px;
     border-radius: 1.5vw;
     text-align: center;
     background-color: #09334E;
-    margin-left: 5vw;
-    margin-right: 5vw;
     width: 20vw;
     animation-name: glow-off;
     animation-duration: 500ms;
     animation-iteration-count: 1;
+}
+
+.tools{
+    margin-right: 20px;
+}
+.glow-div{
+    margin-left: 20px;
 }
 
 @keyframes glow-off{
@@ -55,13 +60,8 @@ body{
     to{box-shadow: 0px 0px 30px black;}
 }
 
-.tools{
-    margin-right: 3vw;
-    margin-left: 20vw;
-}
-
-
 .grid-container{
+    justify-content: center;
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -125,4 +125,57 @@ intro:hover{
 @keyframes rot-back {
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
+}
+
+#contact{
+    width: 25%;
+}
+#who{
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+.grid-container{
+    justify-content: center;
+    display: block;
+}
+.tools{
+    width: 75%;
+    margin-left: 10%;
+    padding-top: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+}
+.glow-div{
+    width: 75%;
+    margin-left: 0%;
+    margin-left: 10%;
+    padding-top: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+}
+
+.out>.glow-div{
+    width: 100%;
+}
+#contact{
+    width: 75%;
+    margin-left:0%;
+    margin-right:5%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+}
+#who{
+    width: 75%;
+    margin-left:0%;
+    margin-right:5%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+}
 }
