@@ -126,9 +126,3 @@ intro:hover{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
-
-intro{
-    background-color: red;
-    justify-content: center;
-    width: 500px;
-}
