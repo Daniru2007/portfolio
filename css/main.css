@@ -11,6 +11,9 @@ body{
 *::selection{
     background-color: #79afca33;
 }
+::selection{
+    background-color: #79afca33;
+}
 
 .heading{
     text-align: center;
