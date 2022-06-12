@@ -1,42 +1,64 @@
-*{
-    background-color: #07273B;
-    color: #79AFCA;
+* {
+    background-color: #07273b;
+    color: #79afca;
     scroll-behavior: smooth;
     font-family: "Fira Code";
-
 }
 
-body{
-    background-color: #07273B;
+body {
+    background-color: #07273b;
 }
 
-*::selection{
+*::selection {
     background-color: #79afca33;
 }
-::selection{
+::selection {
     background-color: #79afca33;
 }
+/* width */
+::-webkit-scrollbar {
+    background-color: hsl(235, 24%, 19%);
+    width: 8px;
+}
 
-.heading{
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: hsla(235, 21%, 11%, 0.322);
+    box-shadow: 0 0 3px hsl(235, 21%, 11%);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 227, 243);
+    border-radius: 10px;
+    transition: background-color 10s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 0.466);
+}
+
+.heading {
     text-align: center;
-    color: #79AFCA;
+    color: #79afca;
     text-shadow: 0px 50px 50px rgb(0, 227, 243);
-    margin:8vw;
+    margin: 8vw;
     font-weight: bold;
 }
 
-
-.after_heading{
+.after_heading {
     width: 50vw;
     border-style: solid;
     border-width: 0px;
     border-top-width: 8px;
-    border-color: #79AFCA;
-    padding:0%;
+    border-color: #79afca;
+    padding: 0%;
 }
 
-
-.tools, .glow-div{
+.tools,
+.glow-div {
     overflow: hidden;
     box-shadow: 0px 0px 30px black;
     grid-template-columns: auto auto;
@@ -44,71 +66,81 @@ body{
     margin-top: 50px;
     width: 100%;
     display: block;
-    border: #79AFCA solid 2px;
+    border: #79afca solid 2px;
     border-radius: 1.5vw;
     text-align: center;
-    background-color: #09334E;
+    background-color: #09334e;
     width: 20vw;
     animation-name: glow-off;
     animation-duration: 500ms;
     animation-iteration-count: 1;
 }
 
-.tools{
+.tools {
     margin-right: 20px;
 }
-.glow-div{
+.glow-div {
     margin-left: 20px;
 }
 
-@keyframes glow-off{
-    from{box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);}
-    to{box-shadow: 0px 0px 30px black;}
+@keyframes glow-off {
+    from {
+        box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
+    }
+    to {
+        box-shadow: 0px 0px 30px black;
+    }
 }
 
-.grid-container{
+.grid-container {
     justify-content: center;
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
-.bg{
-    background-color: #09334E;
+.bg {
+    background-color: #09334e;
 }
 
-.tools>ul,.glow-div>ul{
+.tools > ul,
+.glow-div > ul {
     text-align: left;
 }
 
-.tools:hover, .glow-div:hover{
+.tools:hover,
+.glow-div:hover {
     animation-name: glow;
     animation-duration: 500ms;
     animation-iteration-count: 1;
     box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
 }
-intro:hover{
+intro:hover {
     animation-name: glow;
     animation-duration: 500ms;
     animation-iteration-count: 1;
     box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
 }
 
-@keyframes glow{
-    from{box-shadow: 0px 0px 30px black;}
-    to{box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);}
+@keyframes glow {
+    from {
+        box-shadow: 0px 0px 30px black;
+    }
+    to {
+        box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
+    }
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
 }
 
-.profile-pic{
+.profile-pic {
     box-shadow: 0px 0px 30px black;
     left: 2vw;
     top: 2vw;
-    position:fixed;
+    position: fixed;
     transform: rotate(0deg);
     width: 10vw;
     border-radius: 100%;
@@ -118,70 +150,78 @@ intro:hover{
 }
 
 @keyframes rot {
-    from{transform: rotate(360);}
-    to{transform: rotate(0deg);}
+    from {
+        transform: rotate(360);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
-.profile-pic:hover{
+.profile-pic:hover {
     box-shadow: 0px 0px 30px rgba(0, 227, 243, 0.548);
     animation-name: glow, rot-back;
     animation-iteration-count: 1, infinite;
     animation-duration: 1000ms, 500ms;
 }
 @keyframes rot-back {
-    from{transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-#contact{
+#contact {
     width: 25%;
 }
-#who{
+#who {
     width: 50%;
 }
 
 @media screen and (max-width: 800px) {
-.grid-container{
-    justify-content: center;
-    display: block;
-}
-.tools{
-    width: 75%;
-    margin-left: 10%;
-    padding-top: 10%;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-bottom: 0%;
-}
-.glow-div{
-    width: 75%;
-    margin-left: 0%;
-    margin-left: 10%;
-    padding-top: 10%;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-bottom: 0%;
-}
+    .grid-container {
+        justify-content: center;
+        display: block;
+    }
+    .tools {
+        width: 75%;
+        margin-left: 10%;
+        padding-top: 10%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 0%;
+    }
+    .glow-div {
+        width: 75%;
+        margin-left: 0%;
+        margin-left: 10%;
+        padding-top: 10%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 0%;
+    }
 
-.out>.glow-div{
-    width: 100%;
-}
-#contact{
-    width: 75%;
-    margin-left:0%;
-    margin-right:5%;
-    padding-top: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-bottom: 5%;
-}
-#who{
-    width: 75%;
-    margin-left:0%;
-    margin-right:5%;
-    padding-top: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-bottom: 0%;
-}
+    .out > .glow-div {
+        width: 100%;
+    }
+    #contact {
+        width: 75%;
+        margin-left: 0%;
+        margin-right: 5%;
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 5%;
+    }
+    #who {
+        width: 75%;
+        margin-left: 0%;
+        margin-right: 5%;
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 0%;
+    }
 }
