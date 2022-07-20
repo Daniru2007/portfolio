@@ -1,25 +1,40 @@
 :root {
     --background_color: #0f111a;
+    --alt_background_color: #24293d;
     --normal_text_color: #e8e6e3;
     --head_font: "FiraCode";
     --normal_font: "europa";
-    --head_font_size: 2.5rem;
+    --h1_font_size: 2.5rem;
+    --h2_font_size: 2rem;
     --normal_font_size: 20px;
-    --avatar_size: 300px;
+    --avatar_size: 210px;
     --links: #80cbc4;
 }
 * {
     color: var(--normal_text_color);
     font-family: var(--head_font);
     background-color: var(--background_color);
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
 }
 
 *::selection {
     background-color: #25293f;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 h1 {
-    font-size: var(--head_font);
+    font-size: var(--h1_font_size);
+}
+
+h2 {
+    font-size: var(--h2_font_size);
 }
 
 a {
@@ -36,7 +51,7 @@ a::after {
     transform: scaleX(0);
     transform-origin: bottom right;
     width: 100%;
-    height: 2px;
+    height: 3px;
     left: 0px;
     bottom: 0px;
     transition: transform 0.25s ease-in-out;
@@ -51,23 +66,25 @@ a:hover {
     color: var(--links);
 }
 
-.topic {
-    font-size: var(--head_font_size);
-    padding: 25px;
+.heading {
+    height: 100vh;
 }
 
-.intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
+.topic {
+    font-size: var(--h1_font_size);
+    padding: 25px;
+    margin-top: 120px;
+}
+
+.topic_body {
+    font-size: 30px;
+    padding-bottom: 25px;
 }
 
 .avatar {
     background-color: teal;
     border-radius: 100%;
     margin: 20px;
-    /* margin-left: 100px; */
     user-select: none;
     width: var(--avatar_size);
 }
@@ -82,7 +99,36 @@ a:hover {
     user-select: none;
 }
 
-.about {
-    font-size: var(--normal_font_size);
+.intro {
+    height: 100vh;
+    background-color: var(--alt_background_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro > *::selection {
+    background-color: var(--background_color);
+}
+.intro_topic {
     padding: 50px;
+    background-color: var(--alt_background_color);
+}
+.intro_topic::selection {
+    background-color: var(--background_color);
+}
+
+.intro_about {
+    font-size: var(--normal_font_size);
+    background-color: var(--alt_background_color);
+    padding: 50px;
+    margin: 0px 100px;
+    text-align: center;
+}
+.intro_about > a {
+    background-color: var(--alt_background_color);
+}
+
+.intro_about > a::selection {
+    background-color: var(--background_color);
 }
