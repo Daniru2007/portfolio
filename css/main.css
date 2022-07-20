@@ -1,24 +1,40 @@
 :root {
-    --something: black;
-    --head_font: "eurostile";
+    --background_color: #0f111a;
+    --normal_text_color: #e8e6e3;
+    --head_font: "FiraCode";
     --normal_font: "europa";
+    --head_font_size: 2.5rem;
+    --avatar_size: 500px;
 }
 * {
-    color: var(--something);
+    color: var(--normal_text_color);
     font-family: var(--head_font);
+    background-color: var(--background_color);
+}
+
+*::selection {
+    background-color: #25293f;
+}
+
+.topic {
+    font-size: var(--head_font_size);
+    padding: 25px;
 }
 
 .avatar {
     background-color: blue;
     border-radius: 100%;
-    width: 550px;
-    height: 550px;
+    margin: 20px;
+    user-select: none;
+    width: var(--avatar_size);
 }
 
 .avatar > img {
+    background-color: transparent;
     position: relative;
     width: 550px;
-    height: 550px;
+    width: var(--avatar_size);
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
+    user-select: none;
 }
