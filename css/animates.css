@@ -1,0 +1,29 @@
+.animate1 {
+    position: absolute;
+    background-color: none;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: -100px;
+    box-shadow: aqua 100px 0px 0px;
+    animation: resize_shadow1 infinite 5s;
+}
+
+@keyframes resize_shadow1 {
+    from {
+        box-shadow: aqua 200px 0px 500px;
+    }
+    25% {
+        box-shadow: aqua 1500px 500px 500px;
+    }
+    50% {
+        box-shadow: aqua 1000px 1000px 500px;
+    }
+    75% {
+        box-shadow: aqua 750 200px 500px;
+    }
+    to {
+        box-shadow: aqua 200px 0px 500px;
+    }
+}
