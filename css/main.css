@@ -1,0 +1,24 @@
+:root {
+    --something: black;
+    --head_font: "eurostile";
+    --normal_font: "europa";
+}
+* {
+    color: var(--something);
+    font-family: var(--head_font);
+}
+
+.avatar {
+    background-color: blue;
+    border-radius: 100%;
+    width: 550px;
+    height: 550px;
+}
+
+.avatar > img {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
