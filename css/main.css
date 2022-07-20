@@ -13,7 +13,6 @@
 * {
     color: var(--normal_text_color);
     font-family: var(--head_font);
-    background-color: var(--background_color);
     scroll-behavior: smooth;
     padding: 0px;
     margin: 0px;
@@ -25,6 +24,7 @@
 
 html,
 body {
+    background-color: var(--background_color);
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -101,34 +101,18 @@ a:hover {
 
 .intro {
     height: 100vh;
-    background-color: var(--alt_background_color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.intro > *::selection {
-    background-color: var(--background_color);
-}
 .intro_topic {
-    padding: 50px;
-    background-color: var(--alt_background_color);
-}
-.intro_topic::selection {
-    background-color: var(--background_color);
+    margin: 50px;
 }
 
 .intro_about {
     font-size: var(--normal_font_size);
-    background-color: var(--alt_background_color);
     padding: 50px;
     margin: 0px 100px;
     text-align: center;
-}
-.intro_about > a {
-    background-color: var(--alt_background_color);
-}
-
-.intro_about > a::selection {
-    background-color: var(--background_color);
 }
