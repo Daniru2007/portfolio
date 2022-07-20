@@ -41,7 +41,8 @@ a {
     color: rgb(160, 160, 160);
     position: relative;
     text-decoration: none;
-    transition: color 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    text-shadow: aqua 0px 0px 0px;
 }
 
 a::after {
@@ -64,6 +65,7 @@ a:hover::after {
 
 a:hover {
     color: var(--links);
+    text-shadow: aqua 0px 0px 20px;
 }
 
 .seperator {
