@@ -66,6 +66,12 @@ a:hover {
     color: var(--links);
 }
 
+.seperator {
+    width: 95%;
+    height: 2px;
+    background-color: var(--normal_text_color);
+}
+
 .heading {
     height: 100vh;
 }
