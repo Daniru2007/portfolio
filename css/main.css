@@ -271,6 +271,7 @@ h2 {
 .contact {
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -453,5 +454,33 @@ h2 {
 
     .Langs > center > h2 {
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .project > img {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .project > img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .project > img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .project {
+        margin: 1px;
+    }
+    .project > img {
+        width: 200px;
+        padding: 0px;
     }
 }
