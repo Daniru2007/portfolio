@@ -28,7 +28,25 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0a071f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: aqua;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 0.548);
+}
 h1 {
     font-size: var(--h1_font_size);
 }
