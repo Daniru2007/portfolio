@@ -276,24 +276,144 @@
     height: 100px;
     bottom: -300px;
     left: -100px;
-    box-shadow: gold -200px 0px 0px;
-    animation: resize_shadow5 infinite 8s;
+    box-shadow: lightseagreen -200px 0px 0px;
+    animation: resize_shadow5 infinite 5s;
 }
 
 @keyframes resize_shadow5 {
     from {
-        box-shadow: gold 200px 0px 600px;
+        box-shadow: lightseagreen 200px 0px 600px;
     }
     10% {
-        box-shadow: gold 1500px 500px 600px;
+        box-shadow: lightseagreen 1500px 500px 600px;
     }
     50% {
-        box-shadow: gold 1000px 1000px 600px;
+        box-shadow: lightseagreen 1000px 1000px 600px;
     }
     75% {
-        box-shadow: gold 750 200px 600px;
+        box-shadow: lightseagreen 750 200px 600px;
     }
     to {
-        box-shadow: gold 200px 0px 600px;
+        box-shadow: lightseagreen 200px 0px 600px;
+    }
+}
+
+.animate6 {
+    position: absolute;
+    background-color: none;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    bottom: 300px;
+    left: -100px;
+    box-shadow: cyan -200px 0px 0px;
+    animation: resize_shadow6 infinite 8s;
+}
+
+@keyframes resize_shadow6 {
+    from {
+        box-shadow: cyan 200px 0px 600px;
+    }
+    10% {
+        box-shadow: cyan 1500px 500px 600px;
+    }
+    50% {
+        box-shadow: cyan 1000px 1000px 600px;
+    }
+    75% {
+        box-shadow: cyan 750 200px 600px;
+    }
+    to {
+        box-shadow: cyan 200px 0px 600px;
+    }
+}
+
+.animate7 {
+    position: absolute;
+    background-color: none;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    bottom: 500px;
+    left: -100px;
+    box-shadow: rgb(255, 0, 128) -200px 0px 0px;
+    animation: resize_shadow7 infinite 4s;
+}
+
+@keyframes resize_shadow7 {
+    from {
+        box-shadow: rgb(255, 0, 128) 200px 0px 600px;
+    }
+    10% {
+        box-shadow: rgb(255, 0, 128) 1500px 500px 600px;
+    }
+    50% {
+        box-shadow: rgb(255, 0, 128) 1000px 1000px 600px;
+    }
+    75% {
+        box-shadow: rgb(255, 0, 128) 750 200px 600px;
+    }
+    to {
+        box-shadow: rgb(255, 0, 128) 200px 0px 600px;
+    }
+}
+
+.animate8 {
+    position: absolute;
+    background-color: none;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    left: -100px;
+    box-shadow: rgb(68, 0, 255) -200px 0px 0px;
+    animation: resize_shadow8 infinite 6s;
+}
+
+@keyframes resize_shadow8 {
+    from {
+        box-shadow: rgb(68, 0, 255) 200px 0px 600px;
+    }
+    10% {
+        box-shadow: rgb(68, 0, 255) 750 200px 600px;
+    }
+    50% {
+        box-shadow: rgb(68, 0, 255) 1500px 500px 600px;
+    }
+    75% {
+        box-shadow: rgb(68, 0, 255) 2000px 1000px 600px;
+    }
+    to {
+        box-shadow: rgb(68, 0, 255) 200px 0px 600px;
+    }
+}
+
+.animate9 {
+    position: absolute;
+    background-color: none;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    bottom: -500px;
+    left: -100px;
+    box-shadow: rgb(255, 60, 0) -200px 0px 0px;
+    animation: resize_shadow9 infinite 3s;
+}
+
+@keyframes resize_shadow9 {
+    from {
+        box-shadow: rgb(255, 60, 0) 200px 0px 600px;
+    }
+    10% {
+        box-shadow: rgb(255, 60, 0) 750 200px 600px;
+    }
+    50% {
+        box-shadow: rgb(255, 60, 0) 1500px 500px 600px;
+    }
+    75% {
+        box-shadow: rgb(255, 60, 0) 2000px 1000px 600px;
+    }
+    to {
+        box-shadow: rgb(255, 60, 0) 200px 0px 600px;
     }
 }

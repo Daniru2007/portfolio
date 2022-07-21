@@ -26,7 +26,7 @@ html,
 body {
     background-color: var(--background_color);
     max-width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 h1 {
@@ -66,6 +66,26 @@ a:hover::after {
 a:hover {
     color: var(--links);
     text-shadow: aqua 0px 0px 50px;
+}
+
+.header {
+    background-color: var(--alt_background_color);
+    top: 0;
+    width: 98%;
+    padding: 10px;
+    border: none;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.header > * {
+    padding: 10px 20px;
+    margin: 0px;
+    font-size: 20px;
 }
 
 .seperator {
@@ -111,6 +131,7 @@ a:hover {
 
 .introduction {
     height: 100vh;
+    position: relative;
 }
 .intro {
     height: 100%;
@@ -132,6 +153,7 @@ a:hover {
 
 .DevTools {
     height: 100vh;
+    position: relative;
 }
 .DevTools_content {
     display: flex;
@@ -166,6 +188,7 @@ h2 {
 
 .Langs {
     height: 100vh;
+    position: relative;
 }
 .Langs_content {
     display: flex;
@@ -200,6 +223,7 @@ h2 {
 
 .projects {
     height: 100vh;
+    position: relative;
 }
 
 .projects_content {
@@ -218,6 +242,7 @@ h2 {
 .contact {
     height: 100vh;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
