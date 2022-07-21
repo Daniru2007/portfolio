@@ -197,3 +197,42 @@ h2 {
     transform: rotate3d(0, -1, 0, -10deg) rotateX(10deg);
     box-shadow: aqua 0px 0px 50px;
 }
+
+.projects {
+    height: 100vh;
+}
+
+.projects_content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 10px;
+}
+
+.contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 50px;
+    border: aqua solid 1px;
+    border-radius: 3px;
+    box-shadow: aqua 0px 0px 0px;
+}
+
+.github > * {
+    padding: 10px;
+}
