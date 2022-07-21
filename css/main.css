@@ -28,7 +28,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
-/* width */
+
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -99,6 +99,7 @@ a:hover {
 }
 
 .header > * {
+    text-align: center;
     padding: 10px 20px;
     margin: 0px;
     font-size: 20px;
@@ -482,5 +483,33 @@ h2 {
     .project > img {
         width: 200px;
         padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .header > * {
+        padding: 10px 20px;
+        margin: 0px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .header > * {
+        padding: 0px 10px;
+        margin: 0px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 444px) {
+    .header {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header {
+        display: none;
     }
 }
