@@ -163,3 +163,37 @@ h2 {
     transform: rotate3d(0, -1, 0, -20deg) rotateX(10deg);
     box-shadow: aqua 0px 0px 50px;
 }
+
+.Langs {
+    height: 100vh;
+}
+.Langs_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lf > img,
+h2 {
+    display: inline-block;
+    padding: 10px;
+}
+.lf {
+    cursor: pointer;
+    display: flex;
+    margin: 10px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transform: rotate3d(0, 1, 0, 0deg) rotate(5deg);
+    border: 1px solid aqua;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+.lf:hover {
+    transform: rotate3d(0, -1, 0, -10deg) rotateX(10deg);
+    box-shadow: aqua 0px 0px 50px;
+}
