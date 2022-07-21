@@ -26,7 +26,7 @@ html,
 body {
     background-color: var(--background_color);
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 h1 {
@@ -132,7 +132,12 @@ a:hover {
 
 .DevTools {
     height: 100vh;
-    position: relative;
+}
+.DevTools_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .tools > img,
@@ -141,37 +146,20 @@ h2 {
     padding: 10px;
 }
 .tools {
-    position: absolute;
     cursor: pointer;
     display: flex;
+    margin: 50px;
+    height: 100px;
     justify-content: center;
+    align-items: center;
     padding: 10px;
-}
-
-.windows {
-    right: 100px;
-    top: 100px;
     transform: rotate3d(0, 1, 0, 0deg) rotate(10deg);
     border: 1px solid aqua;
     border-radius: 10px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
-.windows:hover {
-    transform: rotate3d(0, -1, 0, -50deg) rotateX(30deg);
-    box-shadow: aqua 0px 0px 50px;
-}
-
-.vscode {
-    left: 100px;
-    top: 100px;
-    transform: rotate3d(0, 1, 0, 0deg) rotate(10deg);
-    border: 1px solid aqua;
-    border-radius: 10px;
-    transition: all 0.5s ease-in-out;
-}
-
-.vscode:hover {
-    transform: rotate3d(0, -1, 0, -50deg) rotateX(30deg);
+.tools:hover {
+    transform: rotate3d(0, -1, 0, -20deg) rotateX(10deg);
     box-shadow: aqua 0px 0px 50px;
 }
