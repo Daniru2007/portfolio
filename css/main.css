@@ -76,6 +76,7 @@ a:hover {
 
 .heading {
     height: 100vh;
+    position: relative;
 }
 
 .topic {
@@ -95,6 +96,7 @@ a:hover {
     margin: 20px;
     user-select: none;
     width: var(--avatar_size);
+    height: var(--avatar_size);
 }
 
 .avatar > img {
@@ -107,8 +109,11 @@ a:hover {
     user-select: none;
 }
 
-.intro {
+.introduction {
     height: 100vh;
+}
+.intro {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,4 +128,50 @@ a:hover {
     padding: 50px;
     margin: 0px 100px;
     text-align: center;
+}
+
+.DevTools {
+    height: 100vh;
+    position: relative;
+}
+
+.tools > img,
+h2 {
+    display: inline-block;
+    padding: 10px;
+}
+.tools {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.windows {
+    right: 100px;
+    top: 100px;
+    transform: rotate3d(0, 1, 0, 0deg) rotate(10deg);
+    border: 1px solid aqua;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.windows:hover {
+    transform: rotate3d(0, -1, 0, -50deg) rotateX(30deg);
+    box-shadow: aqua 0px 0px 50px;
+}
+
+.vscode {
+    left: 100px;
+    top: 100px;
+    transform: rotate3d(0, 1, 0, 0deg) rotate(10deg);
+    border: 1px solid aqua;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.vscode:hover {
+    transform: rotate3d(0, -1, 0, -50deg) rotateX(30deg);
+    box-shadow: aqua 0px 0px 50px;
 }
