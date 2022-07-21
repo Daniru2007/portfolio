@@ -33,20 +33,18 @@ body {
     width: 7px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #0a071f;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: aqua;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 255, 255, 0.548);
 }
+
 h1 {
     font-size: var(--h1_font_size);
 }
@@ -172,8 +170,14 @@ a:hover {
 .DevTools {
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 .DevTools_content {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +187,7 @@ a:hover {
 .tools > img,
 h2 {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
 }
 .tools {
     cursor: pointer;
@@ -192,7 +196,7 @@ h2 {
     height: 100px;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     transform: rotate3d(0, 1, 0, 0deg) rotate(10deg);
     border: 1px solid aqua;
     border-radius: 10px;
@@ -219,6 +223,9 @@ h2 {
 h2 {
     display: inline-block;
     padding: 10px;
+}
+.lf > img {
+    width: 50px;
 }
 .lf {
     cursor: pointer;
@@ -257,6 +264,10 @@ h2 {
     margin: 10px;
 }
 
+.project > img {
+    width: 400px;
+}
+
 .contact {
     height: 100vh;
     display: flex;
@@ -278,4 +289,169 @@ h2 {
 
 .github > * {
     padding: 10px;
+}
+.github > img {
+    width: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .intro_about {
+        padding: 50px 5px;
+        padding-top: 0px;
+    }
+    .intro_topic {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .avatar > img {
+        width: 150px;
+    }
+    .intro_about {
+        padding: 50px 0px;
+        padding-top: 0px;
+        margin: 0px 10px;
+    }
+    .intro {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        align-content: stretch;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .intro_about {
+        margin: 0px 0px;
+    }
+    .intro_topic {
+        margin: 25px;
+    }
+    .avatar > img {
+        width: 100px;
+    }
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+    .topic {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .intro_topic {
+        margin: 10px;
+    }
+    .intro_about {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 1.3rem !important;
+    }
+    .topic_body {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .tools {
+        margin: 30px;
+        height: 75px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .tools {
+        margin: 20px;
+        height: 75px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .tools > h2 {
+        display: none;
+    }
+    .DevTools_content {
+        justify-content: center;
+        align-content: center;
+    }
+    .DevTools {
+        align-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    .lf {
+        padding: 5px;
+        margin: 7px;
+    }
+    .lf > img {
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .lf {
+        padding: 3px;
+        margin: 7px;
+    }
+    .lf > img {
+        width: 30px;
+    }
+    .lf > h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .lf {
+        padding: 0px;
+        margin: 5px;
+    }
+    .lf > img {
+        width: 25px;
+    }
+    .lf > h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .lf {
+        padding: 5px;
+        margin: 7px;
+    }
+    .lf > img {
+        width: 30px;
+    }
+    .lf > h2 {
+        display: none;
+    }
+
+    .Langs > center > h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .lf {
+        padding: 0px;
+        margin: 5px;
+    }
+    .lf > img {
+        width: 25px;
+        padding: 9px;
+    }
+
+    .Langs > center > h2 {
+        font-size: 1.5rem;
+    }
 }
